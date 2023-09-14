@@ -40,17 +40,21 @@
   align-items: center;
   gap: 20px;
 }
-.second-nav {
+
+/* .second-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #000;
   height: 40px;
-}
+} */
 .nav-menu > ul {
   display: flex;
+  height: 40px;
+  align-items: center;
+  background: #000;
+
   gap: 20px;
-  margin-top: 13px;
 }
 
 .nav-menu > ul > li {
@@ -78,4 +82,47 @@
 }
 .link-css:hover {
   color: black;
+}
+.hamburger-menu {
+  display: none;
+}
+@media (max-width: 900px) {
+  .nav-marquee {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu-mobile {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: #045f5f;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 200px;
+    height: 100vh;
+  }
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    margin-right: 2rem;
+    border: none;
+    outline: none;
+  }
+  .vanky-logo {
+    width: 75px;
+    margin-left: 3rem;
+  }
+  .navbar-right {
+    
+    gap: 6px;
+}
+
 }

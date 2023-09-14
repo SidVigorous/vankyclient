@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 // import bellicon from "../../Assets/Images/bell-icon.png";
 import roayl from "../../Assets/Images/royal.png";
@@ -13,13 +13,19 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { BiBook } from "react-icons/bi";
 import { CgGames } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="navbar-main">
         <div className="navbar-left">
+          <button className="hamburger-menu" onClick={() => setOpen(!open)}>
+            {open ? <AiOutlineClose /> : <GiHamburgerMenu />}
+          </button>
           <Link to="/">
-            <img src={roayl} alt="logo" />
+            <img src={roayl} alt="logo" className="vanky-logo"/>
           </Link>
 
           <div>
@@ -59,67 +65,72 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="second-nav">
-        <div className="nav-menu">
-          <ul>
-            <li>
-              <FaHome style={{ fontSize: "20px" }} />
-              Dashoard
-            </li>
-            <li>
-              <BsPlayFill style={{ fontSize: "20px" }} />
-              In-play
-            </li>
 
-            <li>
-              <VscGraph style={{ fontSize: "20px" }} />
-              <Link to="/runningmarketanalysis" className="link-css">
-                All Market Book
-              </Link>
-            </li>
+      {/* <div className="second-nav"> */}
 
-            <li>
-              <CgProfile style={{ fontSize: "20px" }} />
-              <Link to="/Profile" className="link-css">
-                Profile
-              </Link>
-            </li>
-            <li>
-              <RiLockPasswordFill style={{ fontSize: "20px" }} />
-              <Link className="link-css" to="/Userchangepassword">
-                Password
-              </Link>
-            </li>
-            <li>
-              <AiFillInfoCircle style={{ fontSize: "20px" }} />
-              Rules
-            </li>
-            <li>
-              <BiBook style={{ fontSize: "20px" }} />
-              My Commision
-            </li>
-            <li>
-              <BiBook style={{ fontSize: "20px" }} />
-              Report
-            </li>
-            <li>
-              <CgGames style={{ fontSize: "20px" }} />
-              Live Games
-            </li>
-            <li>
-              <BiBook style={{ fontSize: "20px" }} />
-              Edit Stake
-            </li>
-            <li>
+      <div
+        className={open ? "nav-menu-mobile" : "nav-menu"}
+        onClick={() => setOpen(false)}
+      >
+        <ul>
+          <li>
+            <FaHome style={{ fontSize: "20px" }} />
+            Dashoard
+          </li>
+          <li>
+            <BsPlayFill style={{ fontSize: "20px" }} />
+            In-play
+          </li>
+
+          <li>
+            <Link to="/runningmarketanalysis" className="link-css">
               <VscGraph style={{ fontSize: "20px" }} />
-              IPL Winner
-            </li>
-          </ul>
-        </div>
-        <div>
-          <AiFillAndroid className="android-logo" />
-        </div>
+              <span>All Market Book</span>
+            </Link>
+          </li>
+
+          <li>
+            <CgProfile style={{ fontSize: "20px" }} />
+            <Link to="/Profile" className="link-css">
+              Profile
+            </Link>
+          </li>
+          <li>
+            <RiLockPasswordFill style={{ fontSize: "20px" }} />
+            <Link className="link-css" to="/Userchangepassword">
+              Password
+            </Link>
+          </li>
+          <li>
+            <AiFillInfoCircle style={{ fontSize: "20px" }} />
+            Rules
+          </li>
+          <li>
+            <BiBook style={{ fontSize: "20px" }} />
+            My Commision
+          </li>
+          <li>
+            <BiBook style={{ fontSize: "20px" }} />
+            Report
+          </li>
+          <li>
+            <CgGames style={{ fontSize: "20px" }} />
+            Live Games
+          </li>
+          <li>
+            <BiBook style={{ fontSize: "20px" }} />
+            Edit Stake
+          </li>
+          <li>
+            <VscGraph style={{ fontSize: "20px" }} />
+            IPL Winner
+          </li>
+        </ul>
       </div>
+      {/* <div>
+          <AiFillAndroid className="android-logo" />
+        </div> */}
+      {/* </div> */}
     </>
   );
 };

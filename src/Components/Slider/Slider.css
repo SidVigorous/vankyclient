@@ -6,11 +6,14 @@
 
 .games-div {
   display: flex;
-  gap: 2px;
+  justify-content: space-between;
+ text-align: center;
+ align-items: center;
+  border-bottom: 3px solid #ffc21c;
 }
 
 .crik-game {
-  width: 202px;
+  /* width: 202px; */
   text-align: center;
   font-size: 15px;
   padding: 1rem;
@@ -18,7 +21,7 @@
   background-color: #5cb85c;
 }
 .snook-game {
-  width: 202px;
+  /* width: 202px; */
   text-align: center;
   font-size: 15px;
   padding: 1rem;
@@ -26,7 +29,7 @@
   background-color: #045f5f;
 }
 .casino-game {
-  width: 202px;
+  /* width: 202px; */
   text-align: center;
   font-size: 15px;
   padding: 1rem;
@@ -34,7 +37,7 @@
   background-color: #045f5f;
 }
 .tenis-game {
-  width: 203px;
+  /* width: 203px; */
   text-align: center;
   font-size: 15px;
   padding: 1rem;
@@ -77,5 +80,13 @@
   }
   100% {
     color: red;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider-main-div{
+    width: 100%;
+    margin-left: 0rem;
+    z-index: 1;
   }
 }

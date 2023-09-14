@@ -33,16 +33,20 @@ const Slider = () => {
         </Carousel>
       </div>
 
-      <div className="games-div">
+      {/* <div className="games-div">
         <div className="crik-game">Cricket</div>
         <div className="snook-game"> Snooker</div>
         <div className="casino-game">Tennis</div>
         <Link to="/Allcasino">
           <div className="tenis-game">Casino</div>
         </Link>
+      </div> */}
+      <div className="games-div">
+        <div>Cricket</div>
+        <div>Snooker</div>
+        <div>Tennis</div>
+        <div>Casino</div>
       </div>
-
-      
     </div>
   );
 };
