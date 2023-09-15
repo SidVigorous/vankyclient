@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import roayl from "../../Assets/Images/royal.png";
-import walleticon from "../../Assets/Images/wallet-icons.png";
+
 import bethistory from "../../Assets/Images/bethistory.png";
 import { AiFillInfoCircle } from "react-icons/ai";
+import { HiCurrencyRupee } from "react-icons/hi";
 import { FaHome } from "react-icons/fa";
 import { BsPlayFill } from "react-icons/bs";
 import { VscGraph } from "react-icons/vsc";
@@ -55,7 +56,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-right">
           <div>
-            <img src={walleticon} alt="coin" />
+            <span>
+              <HiCurrencyRupee style={{ fontSize: "30px", color: "white" }} />
+            </span>
           </div>
           <div>
             <div
