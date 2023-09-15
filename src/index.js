@@ -2,15 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Casino from "./Pages/Casino/Casino";
-import Login from "./Components/Login/Login"
+import Login from "./Components/Login/Login";
 import CasinoAddPage from "./Pages/CasinoAddPage/CasinoAddPage";
 import AllMarketBook from "./Pages/AllMarketBook/AllMarketBook";
-import Profile from "./Pages/Profile/Profile"
+import Profile from "./Pages/Profile/Profile";
 import Password from "./Pages/Password/Password";
+import MyCommission from "./Pages/MyCommission/MyCommission";
+import IplWinner from "./Pages/IPLWinner/IplWinner";
 
 const router = createBrowserRouter([
   {
@@ -18,33 +19,42 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path:"/Allcasino",
+    path: "/Allcasino",
     element: <Casino />,
   },
   {
-    path:"/Login",
-    element: <Login/>,
+    path: "/Login",
+    element: <Login />,
   },
   {
-    path:"/CasinoAddPage",
-    element: <CasinoAddPage/>,
-  }
-  ,
+    path: "/CasinoAddPage",
+    element: <CasinoAddPage />,
+  },
   {
-    path:"/runningmarketanalysis",
-    element: <AllMarketBook/>,
+    path: "/runningmarketanalysis",
+    element: <AllMarketBook />,
   },
 
   {
-    path:"/Profile",
-    element: <Profile/>,
-  }
-  ,
-
+    path: "/Profile",
+    element: <Profile />,
+  },
   {
-    path:"/Userchangepassword",
-    element: <Password/>,
-  }
+    path: "/Userchangepassword",
+    element: <Password />,
+  },
+  
+  {
+    path: "/MyCommission",
+    element: <MyCommission />,
+  },
+  {
+    path: "/CupWinner",
+    element: <IplWinner />,
+  },
+  
+
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

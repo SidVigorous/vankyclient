@@ -7,7 +7,7 @@ import bethistory from "../../Assets/Images/bethistory.png";
 import home from "../../Assets/Images/home.png";
 const MobileMenuBar = () => {
   return (
-    <div  className="mobile-main">
+    <div className="mobile-main">
       <div className="mobile-menu">
         <div className="icon-menu">
           <img src={inplay} alt="" />
@@ -18,7 +18,7 @@ const MobileMenuBar = () => {
           <span>Total Legder</span>
         </div>
         <div className="home-icon">
-          <img src={home} alt="" />
+          <img src={home} alt="" className="home-image" />
         </div>
         <div className="icon-menu">
           <img src={bethistory} alt="" />
