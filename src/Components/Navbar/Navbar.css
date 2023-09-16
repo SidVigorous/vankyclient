@@ -46,7 +46,7 @@
 
 .nav-menu > ul {
   display: flex;
-  height: 40px;
+  height: 35px;
   align-items: center;
   background: #000;
 
@@ -64,7 +64,7 @@
 .nav-menu > ul > li:hover {
   background: white;
   color: #000;
-  height: 40px;
+  height: 30px;
 }
 .android-logo {
   color: white;
@@ -89,6 +89,38 @@
 }
 .hamburger-menu {
   display: none;
+}
+
+.submenu {
+  position: absolute;
+  width: 180px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 45px #00000020;
+  margin-top: -30px;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.1s;
+}
+.nav-menu ul li :hover .submenu {
+  z-index: 99;
+  opacity: 1;
+  margin-top: 0;
+}
+.nav-menu ul .submenu li {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+}
+.nav-menu ul .submenu li :hover {
+  color: #e2a500;
+}
+.nav-menu ul .submenu li span {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  font-weight: 500;
+  border-bottom: 1px solid #454545;
 }
 @media (max-width: 900px) {
   .nav-marquee {
@@ -173,4 +205,5 @@
   color: #fcce34;
 }
 .modal-dialog {
-  max-width: 620px;}
+  max-width: 620px;
+}

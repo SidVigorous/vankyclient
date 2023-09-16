@@ -137,12 +137,49 @@ const Navbar = () => {
           </li>
           <li>
             <BiBook style={{ fontSize: "20px" }} />
-            Report
+            <span>
+              Report
+              <ul className="submenu">
+                <li>
+                  <span>Account Statement</span>
+                  <span>Total Legder</span>
+                  <span>Profit & Loss</span>
+                  <span>Bet History</span>
+                  <span>Live Bet History</span>
+                </li>
+              </ul>
+            </span>
           </li>
 
           <li>
             <CgGames style={{ fontSize: "20px" }} />
-            Live Games
+            <span>
+              Live Games
+              <ul className="submenu">
+                <li>
+                  <Link to="/Allcasino">
+                    <span>TeenPatti T20</span>
+                  </Link>
+                  <Link to="/Allcasino">
+                    <span>TeenPatti 1Day</span>
+                  </Link>
+                  <Link to="/Allcasino">
+                    <span>Andar Bahar</span>
+                  </Link>
+                  <Link to="/Allcasino">
+                    <span>Dragon Tiger</span>
+                  </Link>
+                  <Link to="/Allcasino">
+                    <span>32 Cards</span>
+                  </Link>
+                  <Link to="/Allcasino">
+                    <span>Amar Akbar Anthony</span>
+                  </Link>
+
+                  <span>Search Result</span>
+                </li>
+              </ul>
+            </span>
           </li>
           <li onClick={stakehandleShow}>
             <BiBook style={{ fontSize: "20px" }} />
