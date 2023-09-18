@@ -38,7 +38,11 @@ const Navbar = () => {
       <div className="navbar-main">
         <div className="navbar-left">
           <button className="hamburger-menu" onClick={() => setOpen(!open)}>
-            {open ? <AiOutlineClose /> : <GiHamburgerMenu />}
+            {open ? (
+              <AiOutlineClose style={{ color: "white" }} />
+            ) : (
+              <GiHamburgerMenu style={{ color: "white" }} />
+            )}
           </button>
           <Link to="/">
             <img src={roayl} alt="logo" className="vanky-logo" />
@@ -127,7 +131,8 @@ const Navbar = () => {
           </li>
           <li onClick={handleShow}>
             <AiFillInfoCircle style={{ fontSize: "20px" }} />
-            Rules
+
+            <span>Rules</span>
           </li>
           <li>
             <Link to="/MyCommission" className="link-css">
@@ -137,15 +142,29 @@ const Navbar = () => {
           </li>
           <li>
             <BiBook style={{ fontSize: "20px" }} />
+
             <span>
               Report
               <ul className="submenu">
                 <li>
-                  <span>Account Statement</span>
-                  <span>Total Legder</span>
-                  <span>Profit & Loss</span>
-                  <span>Bet History</span>
-                  <span>Live Bet History</span>
+                  <Link to="/AccountStatement">
+                    <span>Account Statement</span>
+                  </Link>
+                  <Link to="/TotalLedger">
+                    <span>Total Legder</span>{" "}
+                  </Link>
+                  <Link to="/ProfitLoss">
+                    {" "}
+                    <span>Profit & Loss</span>{" "}
+                  </Link>
+                  <Link to="/BetHistory">
+                    {" "}
+                    <span>Bet History</span>{" "}
+                  </Link>
+                  <Link to="/LiveBetHistory">
+                    {" "}
+                    <span>Live Bet History</span>{" "}
+                  </Link>
                 </li>
               </ul>
             </span>
@@ -153,6 +172,7 @@ const Navbar = () => {
 
           <li>
             <CgGames style={{ fontSize: "20px" }} />
+
             <span>
               Live Games
               <ul className="submenu">
@@ -183,7 +203,8 @@ const Navbar = () => {
           </li>
           <li onClick={stakehandleShow}>
             <BiBook style={{ fontSize: "20px" }} />
-            Edit Stake
+
+            <span>Edit Stake</span>
           </li>
           <li>
             <Link to="/CupWinner" className="link-css">

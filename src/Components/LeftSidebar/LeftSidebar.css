@@ -1,8 +1,6 @@
 .left-side-bar {
-
   width: 15%;
   float: left;
-
   height: 100vh;
   margin-right: 5px;
   background-image: linear-gradient(
@@ -40,9 +38,7 @@
 }
 
 @media (max-width: 900px) {
-
-.left-side-bar{
-  display: none;
-}
-
+  .left-side-bar {
+    display: none;
+  }
 }

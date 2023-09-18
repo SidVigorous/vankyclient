@@ -41,6 +41,7 @@ const MyCommission = () => {
                 <td></td>
                 <td></td>
               </tr>
+              
             </tbody>
           </Table>
         </div>

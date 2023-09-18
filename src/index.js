@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider ,Outlet} from "react-router-dom";
 import Casino from "./Pages/Casino/Casino";
 import Login from "./Components/Login/Login";
 import CasinoAddPage from "./Pages/CasinoAddPage/CasinoAddPage";
@@ -12,11 +12,19 @@ import Profile from "./Pages/Profile/Profile";
 import Password from "./Pages/Password/Password";
 import MyCommission from "./Pages/MyCommission/MyCommission";
 import IplWinner from "./Pages/IPLWinner/IplWinner";
+import AccountStatement from "./Pages/AccountStatement/AccountStatement";
+import ProfitLoss from "./Pages/Profit&Loss/ProfitLoss";
+import TotalLedger from "./Pages/TotalLegder/TotalLedger";
+import BetHistory from "./Pages/BetHistory/BetHistory";
+import LiveBetHistory from "./Pages/LiveBetHistory/LiveBetHistory";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children:[
+
+    ]
   },
   {
     path: "/Allcasino",
@@ -43,7 +51,7 @@ const router = createBrowserRouter([
     path: "/Userchangepassword",
     element: <Password />,
   },
-  
+
   {
     path: "/MyCommission",
     element: <MyCommission />,
@@ -52,9 +60,28 @@ const router = createBrowserRouter([
     path: "/CupWinner",
     element: <IplWinner />,
   },
-  
 
-  
+  {
+    path: "/AccountStatement",
+    element: <AccountStatement />,
+  },
+  {
+    path: "/ProfitLoss",
+    element: <ProfitLoss />,
+  },
+
+  {
+    path: "/TotalLedger",
+    element: <TotalLedger />,
+  },
+  {
+    path: "/BetHistory",
+    element: <BetHistory />,
+  },
+  {
+    path: "/LiveBetHistory",
+    element: <LiveBetHistory />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

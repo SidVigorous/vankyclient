@@ -1,0 +1,29 @@
+.lena-dena {
+  background: linear-gradient(to right, #2f5b69 0, #47889e 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+.date-search {
+  display: flex;
+  gap: 20px;
+}
+.date-search > input {
+  width: 180px;
+  height: 30px;
+}
+.date-search > select {
+  width: 180px;
+  height: 30px;
+}
+.lena-dena-search{
+    height: 30px;
+  border-radius: 2px;
+  border: none;
+  width: 100px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
