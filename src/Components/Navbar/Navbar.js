@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="navbar-right">
           <div>
             <span>
-              <HiCurrencyRupee style={{ fontSize: "30px", color: "white" }} />
+              <HiCurrencyRupee style={{ fontSize: "30px", color: "white" }} className="rupee-logo" />
             </span>
           </div>
           <div>
@@ -144,21 +144,21 @@ const Navbar = () => {
 
             <span>
               Report
-              <ul className="submenu">
+              <ul className="submenu" style={{marginTop:"8px",borderTop: "3px solid #e2a500" ,marginLeft:"-3rem"}}>
                 <li>
-                  <Link to="/AccountStatement">
+                  <Link to="/AccountStatement" className="link-css">
                     <span>Account Statement</span>
                   </Link>
-                  <Link to="/TotalLedger">
+                  <Link to="/TotalLedger" className="link-css">
                     <span>Total Legder</span>
                   </Link>
-                  <Link to="/ProfitLoss">
+                  <Link to="/ProfitLoss" className="link-css">
                     <span>Profit & Loss</span>
                   </Link>
-                  <Link to="/BetHistory">
+                  <Link to="/BetHistory" className="link-css">
                     <span>Bet History</span>
                   </Link>
-                  <Link to="/LiveBetHistory">
+                  <Link to="/LiveBetHistory" className="link-css">
                     <span>Live Bet History</span>
                   </Link>
                 </li>
@@ -171,24 +171,24 @@ const Navbar = () => {
 
             <span>
               Live Games
-              <ul className="submenu">
+              <ul className="submenu"style={{marginTop:"8px" ,borderTop: "3px solid #e2a500",marginLeft:"-3rem"}}>
                 <li>
-                  <Link to="/Allcasino">
+                  <Link to="/Allcasino" className="link-css">
                     <span>TeenPatti T20</span>
                   </Link>
-                  <Link to="/Allcasino">
+                  <Link to="/Allcasino" className="link-css">
                     <span>TeenPatti 1Day</span>
                   </Link>
-                  <Link to="/Allcasino">
+                  <Link to="/Allcasino" className="link-css">
                     <span>Andar Bahar</span>
                   </Link>
-                  <Link to="/Allcasino">
+                  <Link to="/Allcasino" className="link-css">
                     <span>Dragon Tiger</span>
                   </Link>
-                  <Link to="/Allcasino">
+                  <Link to="/Allcasino" className="link-css">
                     <span>32 Cards</span>
                   </Link>
-                  <Link to="/Allcasino">
+                  <Link to="/Allcasino" className="link-css">
                     <span>Amar Akbar Anthony</span>
                   </Link>
 

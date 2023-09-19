@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider ,Outlet} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Casino from "./Pages/Casino/Casino";
 import Login from "./Components/Login/Login";
 import CasinoAddPage from "./Pages/CasinoAddPage/CasinoAddPage";
@@ -17,14 +17,13 @@ import ProfitLoss from "./Pages/Profit&Loss/ProfitLoss";
 import TotalLedger from "./Pages/TotalLegder/TotalLedger";
 import BetHistory from "./Pages/BetHistory/BetHistory";
 import LiveBetHistory from "./Pages/LiveBetHistory/LiveBetHistory";
+import AddPageLive from "./Pages/AddPageLive/AddPageLive";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children:[
-
-    ]
+    children: [],
   },
   {
     path: "/Allcasino",
@@ -42,7 +41,6 @@ const router = createBrowserRouter([
     path: "/runningmarketanalysis",
     element: <AllMarketBook />,
   },
-
   {
     path: "/Profile",
     element: <Profile />,
@@ -51,7 +49,6 @@ const router = createBrowserRouter([
     path: "/Userchangepassword",
     element: <Password />,
   },
-
   {
     path: "/MyCommission",
     element: <MyCommission />,
@@ -82,6 +79,10 @@ const router = createBrowserRouter([
     path: "/LiveBetHistory",
     element: <LiveBetHistory />,
   },
+  {
+    path:"addapagelive",
+    element:<AddPageLive/>,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
