@@ -4,11 +4,11 @@ import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import Table from "react-bootstrap/Table";
 const AccountStatement = () => {
-    const myComponent = {
-        height: "300px",
-        overflowX: "scroll",
-        overflowY: "hidden",
-      };
+  const myComponent = {
+    height: "300px",
+    overflowX: "scroll",
+    overflowY: "hidden",
+  };
   return (
     <div>
       <Navbar />
@@ -22,8 +22,8 @@ const AccountStatement = () => {
 
         <div className="date-search">
           <div className="date-div">
-            <input type="date" id="date-input" />
-            <input type="date" id="date-input" />
+            <input type="date" id="date-input" value="2000-05-05" />
+            <input type="date" id="date-input" value="2000-05-05" />
           </div>
           <div className="A-btn">
             <button className="search-btn">Search</button>
@@ -34,14 +34,14 @@ const AccountStatement = () => {
             <button className="acct-btn">Account</button>
           </div>
         </div>
-        <div >
+        <div>
           <Table
             striped
             bordered
             hover
             style={{ marginTop: "10px", width: "84%" }}
           >
-            <tbody className="table-name" >
+            <tbody className="table-name">
               <tr>
                 <td>Date</td>
                 <td> Description</td>

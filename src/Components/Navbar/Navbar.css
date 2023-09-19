@@ -115,14 +115,21 @@
   color: #e2a500;
 }
 .nav-menu ul .submenu li span {
-  padding: 10px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+text-decoration: none;
   width: 100%;
   color: #000;
   font-weight: 500;
-  border-bottom: 1px solid #454545;
+  /* border-bottom: 1px solid #454545; */
 }
 @media (max-width: 900px) {
+.submenu{
+  display: block;
+}
+
+
   .nav-marquee {
     display: none;
   }

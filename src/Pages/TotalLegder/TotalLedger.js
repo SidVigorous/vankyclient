@@ -2,7 +2,7 @@ import React from "react";
 import "./TotalLegder.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
-
+import Table from "react-bootstrap/Table";
 const TotalLedger = () => {
   return (
     <div>
@@ -13,16 +13,56 @@ const TotalLedger = () => {
           <span>COMPANY LENA DENA</span>
           <button className="back-btn">Back</button>
         </div>
-        <div className="date-search" >
-          <input type="date" />
-          <input type="date" />
+        <div className="date-search">
+          <input type="date" value="2000-05-05" />
+          <input type="date" value="2000-05-05" />
           <select>
             <option>All</option>
             <option>Settlement</option>
           </select>
           <button className="lena-dena-search">Search</button>
         </div>
-        <hr/>
+        <hr />
+        <div className="score-main">
+          <div>
+            <span className="lena">Lena :</span>
+            <span className="lena-score">0.00</span>
+          </div>
+          <div>
+            <span className="dena">Dena:</span>
+            <span className="dena-score">0.00</span>
+          </div>
+          <div>
+            {" "}
+            <span className="balance">Balance:</span>
+            <span className="dena-score">0 Dena Hai</span>
+          </div>
+        </div>
+
+        <Table striped bordered hover style={{width:"83%"}}>
+          <tbody>
+            <tr>
+              <td>Date</td>
+              <td>Collection Name</td>
+              <td> Debit</td>
+              <td>Credit</td>
+              <td>Balance</td>
+              <td>Payment Type</td>
+              <td>Remark</td>
+            </tr>
+            <tr>
+              <td>16 Sept 2023 00:18 am</td>
+              <td>Cricket - England v New Zealand</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>-</td>
+              <td>User Minus</td>
+            </tr>
+           
+           
+          </tbody>
+        </Table>
       </div>
     </div>
   );

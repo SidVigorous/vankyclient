@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import roayl from "../../Assets/Images/royal.png";
-
 import bethistory from "../../Assets/Images/bethistory.png";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { HiCurrencyRupee } from "react-icons/hi";
@@ -151,19 +150,16 @@ const Navbar = () => {
                     <span>Account Statement</span>
                   </Link>
                   <Link to="/TotalLedger">
-                    <span>Total Legder</span>{" "}
+                    <span>Total Legder</span>
                   </Link>
                   <Link to="/ProfitLoss">
-                    {" "}
-                    <span>Profit & Loss</span>{" "}
+                    <span>Profit & Loss</span>
                   </Link>
                   <Link to="/BetHistory">
-                    {" "}
-                    <span>Bet History</span>{" "}
+                    <span>Bet History</span>
                   </Link>
                   <Link to="/LiveBetHistory">
-                    {" "}
-                    <span>Live Bet History</span>{" "}
+                    <span>Live Bet History</span>
                   </Link>
                 </li>
               </ul>

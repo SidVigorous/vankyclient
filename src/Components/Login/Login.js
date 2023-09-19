@@ -12,7 +12,7 @@ const Login = () => {
         <div className="input-div">
           <BiSolidUser style={{ color: "#7875B5", marginRight: "10px" }} />
           <input
-            type="text"
+            type="email"
             placeholder="Enter User ID..... "
             className="email-input"
           />
