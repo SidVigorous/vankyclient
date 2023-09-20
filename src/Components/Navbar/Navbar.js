@@ -105,7 +105,7 @@ const Navbar = () => {
           <li>
             <Link to="/" className="link-css">
               <BsPlayFill style={{ fontSize: "20px" }} />
-              <span>In-play</span>{" "}
+              <span>In-play</span>
             </Link>
           </li>
 

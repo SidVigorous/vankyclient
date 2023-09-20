@@ -1,6 +1,6 @@
 .games-main {
   display: flex;
-margin-top: 1px;
+  margin-top: 1px;
   width: 100%;
   height: 50px;
   gap: 2px;
@@ -66,5 +66,52 @@ margin-top: 1px;
   }
   100% {
     color: red;
+  }
+}
+
+.cricket-icon {
+  background: linear-gradient(to right, #2f5b69 0, #47889e 100%);
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.cricket-icon-main {
+  border: 1px solid black;
+}
+.cricket-icon > span {
+  color: white;
+}
+.back-cell > span {
+  width: 45px;
+
+  background-color: #46666c;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: text-bottom;
+  font-weight: bold;
+  margin: 10px 1px;
+  border-radius: 5px;
+}
+.back-cell > :nth-child(7) {
+  background: red;
+}
+.match-name > span {
+  color: #007bff;
+  font-weight: 600;
+}
+.about-matches {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 900px) {
+  .about-matches {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
