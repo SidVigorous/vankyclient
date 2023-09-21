@@ -28,7 +28,6 @@ const ViewMatch = () => {
                 LIVE TV
               </span>
               <span className="matches">MATCHES</span>
-              
             </div>
           </div>
 
@@ -78,7 +77,7 @@ const ViewMatch = () => {
               <div>djfihgdugndfjibgdm djbuhgudbdbvjbvjhb</div>
             </>
           )}
-         
+
           <Table striped bordered hover>
             <thead>
               <tr>
@@ -121,6 +120,45 @@ const ViewMatch = () => {
           <div style={{ display: "flex" }}>
             <span className="bet-slip">Bet Slip</span>
             <span className="edit-stake">Edit Stake</span>
+          </div>
+
+          <div>
+            <div className="state-name">Bangladesh</div>
+
+            <div className="state-profit-loss">
+              <span>Yet (Bet For)</span>
+              <span>
+                <span>Profit</span>
+                <span>0</span>
+              </span>
+              <span>
+                <span>Loss</span>
+                <span>0</span>
+              </span>
+            </div>
+            <div className="odd-even">
+              <span>odd</span>
+              <span>even</span>
+            </div>
+            <div className="choice-betting">
+              <input type="text" className="odd-input" />
+
+              <input type="number" className="even-input" />
+            </div>
+            <div className="betprice-box">
+              <span className="bet-amount">ggg</span>
+              <span>1K</span>
+              <span>2K</span>
+              <span>3K</span>
+              <span>5k</span>
+              <span>10K</span>
+              <span>20k</span>
+              <span>25K</span>
+              <span>50K</span>
+              <span>1L</span>
+              <span>2L</span>
+              <span>C</span>
+            </div>
           </div>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="1">

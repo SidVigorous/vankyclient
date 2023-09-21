@@ -8,7 +8,7 @@ const BetHistory = () => {
     <div>
       <Navbar />
       <LeftSidebar />
-      <div style={{ marginLeft: "18rem" }}>
+      <div className="bet-history-main">
         <div className="bet-history">
           <span>BET HISTORY</span>
           <select>

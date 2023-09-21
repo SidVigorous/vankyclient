@@ -34,7 +34,7 @@ const AccountStatement = () => {
             <button className="acct-btn">Account</button>
           </div>
         </div>
-        <div>
+        <div className="acct-stmt-table">
           <Table
             striped
             bordered

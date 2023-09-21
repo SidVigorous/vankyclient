@@ -9,7 +9,7 @@ const LiveBetHistory = () => {
       <Navbar />
       <LeftSidebar />
 
-      <div style={{ marginLeft: "18rem" }}>
+      <div className="live-bet-his-main">
         <div className="client-live-game">
           <span>CLIENT LIVE GAME BETS REPORT</span>
           <select>

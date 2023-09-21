@@ -64,3 +64,24 @@
   gap: 50px;
   background: #f3f0dc;
 }
+
+@media (max-width: 900px) {
+  .lena-dena-table {
+    overflow-y: auto;
+  }
+  .score-main {
+    height: 128px;
+    justify-content: center;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .score-lena,
+  .score-dena {
+    display: flex;
+    gap: 60px;
+  }
+  .score-balance {
+    display: flex;
+    gap: 29px;
+  }
+}

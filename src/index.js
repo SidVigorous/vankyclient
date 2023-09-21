@@ -84,7 +84,7 @@ const router = createBrowserRouter([
     element: <AddPageLive />,
   },
   {
-    path: "/Viewmatch",
+    path: "/ViewMatch",
     element: <ViewMatch />,
   },
 ]);

@@ -1,3 +1,7 @@
+.live-bet-his-main {
+  margin-left: 18rem;
+}
+
 .client-live-game {
   background: linear-gradient(to right, #2f5b69 0, #47889e 100%);
   padding: 5px;
@@ -33,4 +37,22 @@
 }
 .live-casino-table-main > table > thead > tr > td {
   background: #b9b9b9;
+}
+@media (max-width: 900px) {
+  .live-casino-table-main {
+    overflow-y: auto;
+  }
+  .live-bet-his-main {
+    margin-left: 0;
+  }
+  .live-casino-date-main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .live-casino-input {
+    width: 46%;
+  }
+  .live-casino-date-main > select {
+    width: 46%;
+  }
 }

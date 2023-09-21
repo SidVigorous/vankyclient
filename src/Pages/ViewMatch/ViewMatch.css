@@ -88,3 +88,53 @@ table > thead > tr {
   background: white;
   font-weight: 700;
 }
+.state-name {
+  background: black;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.state-profit-loss {
+  background: white;
+  display: flex;
+  gap: 135px;
+}
+.state-profit-loss > span:nth-child(1) {
+  font-weight: 700;
+}
+.state-profit-loss > span:nth-child(2),
+.state-profit-loss > span:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+.odd-even {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+}
+.odd-even > span {
+  font-weight: 700;
+}
+.choice-betting {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.odd-input,
+.even-input {
+  width: 40%;
+}
+.betprice-box>span{
+  background: #232323;
+
+
+}
+/* .bet-amount{
+  width: 20px;
+  padding: 10px;
+  background: #232323;
+  color: white;
+} */
