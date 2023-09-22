@@ -12,6 +12,7 @@ import dt20 from "../../Assets/Images/dt20.jpg";
 import { Link } from "react-router-dom";
 
 import Card from "react-bootstrap/Card";
+import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const Casino = () => {
   return (
     <div>
@@ -32,7 +33,7 @@ const Casino = () => {
             <Card.Body>
               <Card.Title>Ander Bahar</Card.Title>
             </Card.Body>
-          </Card>{" "}
+          </Card>
         </Link>
         <Link to="/CasinoAddPage">
           <Card style={{ width: "23rem" }}>
@@ -41,7 +42,7 @@ const Casino = () => {
               <Card.Title>Teen Patti 1Day</Card.Title>
             </Card.Body>
           </Card>
-        </Link>{" "}
+        </Link>
         <Link to="/CasinoAddPage">
           <Card style={{ width: "23rem" }}>
             <Card.Img variant="top" src={teen20} />
@@ -49,7 +50,7 @@ const Casino = () => {
               <Card.Title>Teen Patti T20</Card.Title>
             </Card.Body>
           </Card>
-        </Link>{" "}
+        </Link>
         <Link to="/CasinoAddPage">
           <Card style={{ width: "23rem" }}>
             <Card.Img variant="top" src={card32} />
@@ -83,6 +84,7 @@ const Casino = () => {
           </Card>
         </Link>
       </div>
+      <MobileMenuBar />
     </div>
   );
 };

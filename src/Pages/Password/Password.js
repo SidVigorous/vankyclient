@@ -3,6 +3,7 @@ import "./Password.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import treeexchcom from "../../Assets/Images/treeexchcom.png";
+import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const Password = () => {
   return (
     <div>
@@ -35,6 +36,8 @@ const Password = () => {
           <button className="pass-submit">Submit</button>
         </div>
       </div>
+
+      <MobileMenuBar/>
     </div>
   );
 };

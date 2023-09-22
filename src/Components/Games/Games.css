@@ -29,9 +29,10 @@
 }
 .casino-game {
   width: 100%;
+}
+.animation {
   animation: rainbow 5s infinite;
 }
-
 @keyframes rainbow {
   0% {
     color: red;

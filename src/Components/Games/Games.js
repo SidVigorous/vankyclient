@@ -14,7 +14,10 @@ const Games = () => {
         <div className="tennis-game">Tennis</div>
 
         <div className="casino-game">
-          <Link to="/Allcasino">Casino </Link>
+          <Link to="/Allcasino" style={{ textDecoration: "none" }}>
+            <span className="animation">Casino</span>
+          </Link>
+          {/* <Link to="/Allcasino">Casino</Link> */}
         </div>
       </div>
 

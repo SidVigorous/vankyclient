@@ -3,6 +3,7 @@ import "./AccountStatement.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import Table from "react-bootstrap/Table";
+import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const AccountStatement = () => {
   const myComponent = {
     height: "300px",
@@ -95,6 +96,7 @@ const AccountStatement = () => {
           </Table>
         </div>
       </div>
+      <MobileMenuBar />
     </div>
   );
 };

@@ -3,11 +3,11 @@ import "./MyCommission.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import Table from "react-bootstrap/Table";
+import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const MyCommission = () => {
   return (
     <div>
       <Navbar />
-
       <LeftSidebar />
       <div className="commission-div">
         <div className="my-commi">MY COMMISSION</div>
@@ -41,11 +41,11 @@ const MyCommission = () => {
                 <td></td>
                 <td></td>
               </tr>
-              
             </tbody>
           </Table>
         </div>
       </div>
+      <MobileMenuBar/>
     </div>
   );
 };

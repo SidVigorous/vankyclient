@@ -3,6 +3,7 @@ import "./ProfitLoss.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import Table from "react-bootstrap/Table";
+import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const ProfitLoss = () => {
   return (
     <div>
@@ -49,6 +50,7 @@ const ProfitLoss = () => {
           </Table>
         </div>
       </div>
+      <MobileMenuBar/>
     </div>
   );
 };

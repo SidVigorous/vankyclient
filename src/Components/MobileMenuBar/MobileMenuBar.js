@@ -11,11 +11,11 @@ const MobileMenuBar = () => {
       <div className="mobile-menu">
         <div className="icon-menu">
           <img src={inplay} alt="" />
-          <span>Acc. stmt.</span>
+          <span>Acc</span>
         </div>
         <div className="icon-menu">
           <img src={editstate} alt="" />
-          <span>Total Legder</span>
+          <span>Total</span>
         </div>
         <div className="home-icon">
           <img src={home} alt="" className="home-image" />

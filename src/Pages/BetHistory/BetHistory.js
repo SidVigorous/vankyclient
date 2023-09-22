@@ -3,6 +3,7 @@ import "./BetHistory.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import Table from "react-bootstrap/Table";
+import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const BetHistory = () => {
   return (
     <div>
@@ -66,6 +67,7 @@ const BetHistory = () => {
           </Table>
         </div>
       </div>
+      <MobileMenuBar/>
     </div>
   );
 };

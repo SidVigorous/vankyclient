@@ -60,7 +60,10 @@ const Navbar = () => {
         <div className="navbar-right">
           <div>
             <span>
-              <HiCurrencyRupee style={{ fontSize: "30px", color: "white" }} className="rupee-logo" />
+              <HiCurrencyRupee
+                style={{ fontSize: "30px", color: "white" }}
+                className="rupee-logo"
+              />
             </span>
           </div>
           <div>
@@ -144,7 +147,14 @@ const Navbar = () => {
 
             <span>
               Report
-              <ul className="submenu" style={{marginTop:"8px",borderTop: "3px solid #e2a500" ,marginLeft:"-3rem"}}>
+              <ul
+                className="submenu"
+                style={{
+                  marginTop: "8px",
+                  borderTop: "3px solid #e2a500",
+                  marginLeft: "-3rem",
+                }}
+              >
                 <li>
                   <Link to="/AccountStatement" className="link-css">
                     <span>Account Statement</span>
@@ -168,10 +178,16 @@ const Navbar = () => {
 
           <li>
             <CgGames style={{ fontSize: "20px" }} />
-
             <span>
               Live Games
-              <ul className="submenu"style={{marginTop:"8px" ,borderTop: "3px solid #e2a500",marginLeft:"-3rem"}}>
+              <ul
+                className="submenu"
+                style={{
+                  marginTop: "8px",
+                  borderTop: "3px solid #e2a500",
+                  marginLeft: "-3rem",
+                }}
+              >
                 <li>
                   <Link to="/Allcasino" className="link-css">
                     <span>TeenPatti T20</span>
@@ -407,67 +423,57 @@ const Navbar = () => {
               <Modal.Title>Chip Setting</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <div style={{ display: "flex", gap: "5px" }}>
+              <div style={{ display: "flex", gap: "5px", flexWrap: "wrap" }}>
                 <label>Chips Name 1: </label>
                 <input type="text" />
                 <label>Chips Name 1 </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 2: </label>
                 <input type="text" />
                 <label>Chips Name 2: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 3: </label>
                 <input type="text" />
                 <label>Chips Name 3: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 4: </label>
                 <input type="text" />
                 <label>Chips Name 4: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 5: </label>
                 <input type="text" />
                 <label>Chips Name 5: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 6: </label>
                 <input type="text" />
                 <label>Chips Name 6: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 7: </label>
                 <input type="text" />
                 <label>Chips Name 7: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 8: </label>
                 <input type="text" />
                 <label>Chips Name 8: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 9: </label>
                 <input type="text" />
                 <label>Chips Name 9: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 10: </label>
                 <input type="text" />
                 <label>Chips Name 10: </label>
                 <input type="text" />
-              </div>
-              <div style={{ display: "flex", gap: "5px" }}>
+
                 <label>Chips Name 11: </label>
                 <input type="text" />
                 <label>Chips Name 11: </label>

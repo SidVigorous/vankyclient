@@ -48,7 +48,6 @@ table > thead > tr {
   color: white;
   text-align: center;
   /* border: 0.5px solid #ff0000; */
-
   background: #045f5f;
 }
 .bet-slip {
@@ -127,10 +126,8 @@ table > thead > tr {
 .even-input {
   width: 40%;
 }
-.betprice-box>span{
+.betprice-box > span {
   background: #232323;
-
-
 }
 /* .bet-amount{
   width: 20px;
