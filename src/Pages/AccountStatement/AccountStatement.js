@@ -5,11 +5,11 @@ import LeftSidebar from "../../Components/LeftSidebar/LeftSidebar";
 import Table from "react-bootstrap/Table";
 import MobileMenuBar from "../../Components/MobileMenuBar/MobileMenuBar";
 const AccountStatement = () => {
-  const myComponent = {
-    height: "300px",
-    overflowX: "scroll",
-    overflowY: "hidden",
-  };
+  // const myComponent = {
+  //   height: "300px",
+  //   overflowX: "scroll",
+  //   overflowY: "hidden",
+  // };
   return (
     <div>
       <Navbar />
@@ -46,12 +46,12 @@ const AccountStatement = () => {
               <tr>
                 <td>Date</td>
                 <td> Description</td>
-                <td> Prev. Bal</td>
+                <td>Prev. Bal</td>
                 <td> CR</td>
                 <td>DR</td>
-                <td> Comm+</td>
-                <td> Comm-</td>
-                <td> Balance</td>
+                <td>Comm+</td>
+                <td>Comm-</td>
+                <td>Balance</td>
               </tr>
               <tr>
                 <td>16 Sept 2023 00:18 am</td>

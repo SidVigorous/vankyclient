@@ -15,7 +15,6 @@
 }
 
 .comi-date {
-  
   margin-top: 10px;
   display: flex;
   gap: 50px;
@@ -31,12 +30,12 @@
 }
 
 @media (max-width: 900px) {
-.commission-div {
-  width: 100%;
-  margin-left: 0rem; 
-   margin-right: 0rem;
-}
-.comi-date {
-  gap: 30px;
-  justify-content: space-around;}
+  .commission-div {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .comi-date {
+    gap: 9px;
+  }
 }

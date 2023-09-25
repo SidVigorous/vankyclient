@@ -24,6 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  
   },
   {
     path: "/Allcasino",

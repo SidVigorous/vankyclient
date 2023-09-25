@@ -27,11 +27,11 @@ const MyCommission = () => {
             <tbody className="table-name">
               <tr>
                 <td>Date</td>
-                <td> M. Comm.</td>
-                <td> S. Comm.</td>
-                <td> C. Comm.</td>
+                <td>M. Comm.</td>
+                <td>S. Comm.</td>
+                <td>C. Comm.</td>
                 <td>T. Comm.</td>
-                <td> Name</td>
+                <td>Name</td>
               </tr>
               <tr>
                 <td>Total</td>
@@ -45,7 +45,7 @@ const MyCommission = () => {
           </Table>
         </div>
       </div>
-      <MobileMenuBar/>
+      <MobileMenuBar />
     </div>
   );
 };

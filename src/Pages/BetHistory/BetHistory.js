@@ -22,10 +22,11 @@ const BetHistory = () => {
 
         <div className="bet-history-date">
           <input type="date" className="bet-history-input" value="2000-05-05" />
+
           <input type="date" className="bet-history-input" value="2000-05-05" />
           <input
             type="text"
-            placeholder="search"
+            placeholder="Search..."
             className="bet-history-input"
           />
           <select className="bet-hitory-select">
@@ -67,7 +68,7 @@ const BetHistory = () => {
           </Table>
         </div>
       </div>
-      <MobileMenuBar/>
+      <MobileMenuBar />
     </div>
   );
 };

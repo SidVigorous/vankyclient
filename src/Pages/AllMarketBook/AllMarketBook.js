@@ -12,7 +12,7 @@ const AllMarketBook = () => {
         <div className="my-mart-div">MY MARKET</div>
         <div className="no-reacod-div">No Record Found</div>
       </div>
-      <MobileMenuBar/>
+      <MobileMenuBar />
     </div>
   );
 };

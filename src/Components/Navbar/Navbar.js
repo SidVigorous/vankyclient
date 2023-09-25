@@ -32,6 +32,7 @@ const Navbar = () => {
     overflowX: "hidden",
     overflowY: "scroll",
   };
+
   return (
     <>
       <div className="navbar-main">
@@ -82,10 +83,12 @@ const Navbar = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              marginRight: "2rem",
+              marginRight: "4rem",
             }}
           >
             <img src={bethistory} alt="user" />
+
+    {/* <select><option>password</option></select> */}
             <span style={{ color: "white" }}>hfuih</span>
           </div>
         </div>

@@ -26,26 +26,28 @@ const Games = () => {
           <img src={cricket} alt="" />
           <span>Cricket</span>
         </div>
-        <div className="about-matches">
-          <div className="match-name">
-            <img src={Matchname} alt="" />
-            <span>Surrey v Northamptonshire</span>
+        <Link to="/ViewMatch">
+          <div className="about-matches">
+            <div className="match-name">
+              <img src={Matchname} alt="" />
+              <span>Surrey v Northamptonshire</span>
+            </div>
+            <div>
+              <img src={tv} alt="" style={{ width: "30px" }} />
+            </div>
+            <div className="back-cell">
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>
+                <FaGreaterThan />
+              </span>
+            </div>
           </div>
-          <div>
-            <img src={tv} alt="" style={{ width: "30px" }} />
-          </div>
-          <div className="back-cell">
-            <span>-</span>
-            <span>-</span>
-            <span>-</span>
-            <span>-</span>
-            <span>-</span>
-            <span>-</span>
-            <span>
-              <FaGreaterThan />
-            </span>
-          </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
