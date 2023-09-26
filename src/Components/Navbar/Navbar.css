@@ -41,7 +41,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 }
 
 .nav-menu > ul {
@@ -49,7 +49,6 @@
   height: 35px;
   align-items: center;
   background: #000;
-
   gap: 20px;
 }
 
@@ -124,6 +123,14 @@
   font-weight: 500;
   /* border-bottom: 1px solid #454545; */
 }
+.logout-btn {
+  background-color: #e2a500;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
 @media (max-width: 900px) {
   .submenu {
     display: block;

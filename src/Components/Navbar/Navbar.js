@@ -16,6 +16,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { HiOutlineLogout } from "react-icons/hi";
+import { FiChevronDown } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -31,6 +34,13 @@ const Navbar = () => {
     height: "300px",
     overflowX: "hidden",
     overflowY: "scroll",
+  };
+  const navigate = useNavigate();
+  const handleLogout = (props) => {
+    // remove the token and user from the session storage
+    sessionStorage.removeItem("token");
+    sessionStorage.removeItem("user");
+    navigate("/login");
   };
 
   return (
@@ -87,10 +97,18 @@ const Navbar = () => {
             }}
           >
             <img src={bethistory} alt="user" />
-
-    {/* <select><option>password</option></select> */}
-            <span style={{ color: "white" }}>hfuih</span>
+            <span style={{ color: "white" }}>
+              hfuih
+              <FiChevronDown />
+            </span>
           </div>
+
+          <button className="logout-btn" onClick={handleLogout}>
+            logout
+            <span>
+              <HiOutlineLogout />
+            </span>
+          </button>
         </div>
       </div>
 

@@ -1,39 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import khelo from "../../Assets/Images/khelo.png";
 import { BiSolidUser } from "react-icons/bi";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaGreaterThan } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import httpPost from  "../../Constants/Http"
+import { httpPost } from "../../utils/Http";
+import axios from "axios";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  // useEffect(() => {
-  //   if (localStorage.getItem("user-info")) {
-  //     navigate("/login");
-  //   }
-  // }, []);
 
-  // async function login() {
-  //   // console.log("data", email, password);
-  //   let item = { email, password };
-  //   let result = await fetch(
-  //     "https://client-rest-api.vercel.app/v1/user/login",
-  //     {
-  //       method: "post",
-  //       headers: {
-  //         "content-type": "application/json",
-  //         Accept: "application/json",
-  //       },
-  //       body: JSON.stringify(item),
-  //     }
-  //   );
-  //   result = await result.json();
-  //   localStorage.setItem("user-info", JSON.stringify(result));
-  //   navigate("/");
-  // }
+  const handleApi = () => {
+    // console.log({ email, password });
+    axios
+      .post("https://client-rest-api.vercel.app/v1/user/login", {
+        username: email,
+        password: password,
+      })
+
+      // httpPost("/user/login", {
+      //   username: email,
+      //   password: password,
+      // })
+      .then((res) => {
+        console.log(res);
+        navigate("/");
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
   return (
     <div className="login-main">
       <div className="login-div">
@@ -44,6 +43,7 @@ const Login = () => {
             type="email"
             placeholder="Enter User ID..... "
             className="email-input"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -56,10 +56,11 @@ const Login = () => {
             placeholder="password"
             autoComplete="off"
             className="password-input"
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button className="login-btn">
+        <button className="login-btn" onClick={handleApi}>
           LOG IN NOW
           <FaGreaterThan style={{ color: "#7875B5", marginLeft: "6rem" }} />
         </button>
