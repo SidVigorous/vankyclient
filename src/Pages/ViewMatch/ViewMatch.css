@@ -128,6 +128,24 @@ table > thead > tr {
 }
 .betprice-box > span {
   background: #232323;
+  color: white;
+}
+
+.clear-all-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 240px;
+  height: 30px;
+}
+.place-bet-btn {
+  background-color: #0b7d36;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 240px;
+  height: 30px;
 }
 /* .bet-amount{
   width: 20px;

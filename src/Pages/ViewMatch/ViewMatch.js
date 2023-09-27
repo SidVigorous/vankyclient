@@ -159,6 +159,10 @@ const ViewMatch = () => {
               <span>2L</span>
               <span>C</span>
             </div>
+            <div>
+              <button className="clear-all-btn">Clear All</button>
+              <button className="place-bet-btn">Place Bet</button>
+            </div>
           </div>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="1">

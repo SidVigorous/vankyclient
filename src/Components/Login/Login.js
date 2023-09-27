@@ -41,7 +41,7 @@ const Login = () => {
           <BiSolidUser style={{ color: "#7875B5", marginRight: "10px" }} />
           <input
             type="email"
-            placeholder="Enter User ID..... "
+            placeholder="Enter User ID....."
             className="email-input"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
