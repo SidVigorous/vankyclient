@@ -19,7 +19,9 @@ import Modal from "react-bootstrap/Modal";
 import { HiOutlineLogout } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
 const Navbar = () => {
+  const [ShowMenu, setShowMenu] = useState(false);
   const [open, setOpen] = useState(false);
 
   const [show, setShow] = useState(false);
@@ -93,22 +95,25 @@ const Navbar = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              marginRight: "4rem",
+              marginRight: "1rem",
             }}
           >
-            <img src={bethistory} alt="user" />
+            <img src={bethistory} alt="user" style={{ width: "30px" }} />
             <span style={{ color: "white" }}>
-              hfuih
-              <FiChevronDown />
+              {/* hfuih
+              <FiChevronDown /> */}
+              <Dropdown>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  hfuih
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item>Change Password</Dropdown.Item>
+                  <Dropdown.Item onClick={handleLogout}>Log out</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </span>
           </div>
-
-          <button className="logout-btn" onClick={handleLogout}>
-            logout
-            <span>
-              <HiOutlineLogout />
-            </span>
-          </button>
         </div>
       </div>
 
@@ -176,7 +181,7 @@ const Navbar = () => {
                   marginLeft: "-3rem",
                 }}
               >
-                <li>
+                <li style={{ listStyle: "none" }}>
                   <Link to="/AccountStatement" className="link-css">
                     <span>Account Statement</span>
                   </Link>
@@ -209,7 +214,7 @@ const Navbar = () => {
                   marginLeft: "-3rem",
                 }}
               >
-                <li>
+                <li style={{ listStyle: "none" }}>
                   <Link to="/Allcasino" className="link-css">
                     <span>TeenPatti T20</span>
                   </Link>

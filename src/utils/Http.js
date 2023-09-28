@@ -1,7 +1,7 @@
 import axios from "axios";
 // import { setUserBalance } from "../modules/user/actions";
 //const base_url = `http://localhost/PhpCode/Sixpro_client_api/MatchApi/`;
-const base_url = ` 'https://client-rest-api.vercel.app/v1`;
+const base_url = ` https://client-rest-api.vercel.app/v1`;
 const casinoUrl = base_url;
 
 const token = localStorage.getItem("access-token");
@@ -31,19 +31,21 @@ const httpGet = async (url, params, isCasino = false) => {
   }
 };
 
-const httpPost = async (url, params, isCasino) => {
+const httpPost = async (url, params) => {
   try {
-    const apiUrl = isCasino ? casinoUrl : base_url;
+    // const apiUrl = isCasino ? casinoUrl : base_url;
 
     const result = await axios({
       method: "POST",
-      url: apiUrl + url,
+      url: base_url + url,
       data: { ...params },
-      headers: {
-        token,
-        user: userData?.data?.username,
-      },
+      // headers: {
+
+      //   user: userData?.data?.username,
+      // },
     });
+
+    console.log(result);
 
     invalidToken(result.data.msg);
 
@@ -63,4 +65,3 @@ const invalidToken = (msg) => {
 };
 
 export { httpGet, httpPost };
-

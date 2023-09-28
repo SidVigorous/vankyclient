@@ -19,7 +19,8 @@ import BetHistory from "./Pages/BetHistory/BetHistory";
 import LiveBetHistory from "./Pages/LiveBetHistory/LiveBetHistory";
 import AddPageLive from "./Pages/AddPageLive/AddPageLive";
 import ViewMatch from "./Pages/ViewMatch/ViewMatch";
-
+import PrivateRoute from "./Routes/PrivateRoutes";
+import PublicRoutes from "./Routes/PublicRoutes";
 const router = createBrowserRouter([
   {
     path: "/",

@@ -6,7 +6,7 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { FaGreaterThan } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { httpPost } from "../../utils/Http";
-import axios from "axios";
+// import axios from "axios";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,18 +14,21 @@ const Login = () => {
 
   const handleApi = () => {
     // console.log({ email, password });
-    axios
-      .post("https://client-rest-api.vercel.app/v1/user/login", {
-        username: email,
-        password: password,
-      })
+    // axios
+    //   .post("https://client-rest-api.vercel.app/v1/user/login", {
+    //     username: email,
+    //     password: password,
+    //   })
 
-      // httpPost("/user/login", {
-      //   username: email,
-      //   password: password,
-      // })
+    httpPost("/user/login", {
+      username: email,
+      password: password,
+    })
       .then((res) => {
         console.log(res);
+
+        localStorage.setItem("username", JSON.stringify(email));
+        localStorage.setItem("password", JSON.stringify(password));
         navigate("/");
       })
       .catch((e) => {
