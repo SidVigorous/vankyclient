@@ -27,8 +27,9 @@ const Login = () => {
       .then((res) => {
         console.log(res);
 
-        localStorage.setItem("username", JSON.stringify(email));
-        localStorage.setItem("password", JSON.stringify(password));
+        // localStorage.setItem("username", JSON.stringify(email));
+        // localStorage.setItem("password", JSON.stringify(password));
+        localStorage.setItem("token", JSON.stringify(res.token));
         navigate("/");
       })
       .catch((e) => {

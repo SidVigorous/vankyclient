@@ -16,12 +16,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { HiOutlineLogout } from "react-icons/hi";
-import { FiChevronDown } from "react-icons/fi";
+
 import { useNavigate } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 const Navbar = () => {
-  const [ShowMenu, setShowMenu] = useState(false);
   const [open, setOpen] = useState(false);
 
   const [show, setShow] = useState(false);
@@ -100,8 +98,6 @@ const Navbar = () => {
           >
             <img src={bethistory} alt="user" style={{ width: "30px" }} />
             <span style={{ color: "white" }}>
-              {/* hfuih
-              <FiChevronDown /> */}
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   hfuih

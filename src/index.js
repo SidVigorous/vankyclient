@@ -19,8 +19,8 @@ import BetHistory from "./Pages/BetHistory/BetHistory";
 import LiveBetHistory from "./Pages/LiveBetHistory/LiveBetHistory";
 import AddPageLive from "./Pages/AddPageLive/AddPageLive";
 import ViewMatch from "./Pages/ViewMatch/ViewMatch";
-import PrivateRoute from "./Routes/PrivateRoutes";
-import PublicRoutes from "./Routes/PublicRoutes";
+import PrivateRoute from "./utils/PrivateRoute";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +28,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/Allcasino",
-    element: <Casino />,
+    element: (
+      <PrivateRoute>
+        <Casino />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/Login",
@@ -36,56 +40,109 @@ const router = createBrowserRouter([
   },
   {
     path: "/CasinoAddPage",
-    element: <CasinoAddPage />,
+    element: (
+      <PrivateRoute>
+        <CasinoAddPage />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/runningmarketanalysis",
-    element: <AllMarketBook />,
+    element: (
+      <PrivateRoute>
+        <AllMarketBook />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/Profile",
-    element: <Profile />,
+    element: (
+      <PrivateRoute>
+        <Profile />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/Userchangepassword",
-    element: <Password />,
+    element: (
+      <PrivateRoute>
+        <Password />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/MyCommission",
-    element: <MyCommission />,
+    element: (
+      <PrivateRoute>
+        <MyCommission />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/CupWinner",
-    element: <IplWinner />,
+    element: (
+      <PrivateRoute>
+        <IplWinner />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/AccountStatement",
-    element: <AccountStatement />,
+    element: (
+      <PrivateRoute>
+        <AccountStatement />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/ProfitLoss",
-    element: <ProfitLoss />,
+    element: (
+      <PrivateRoute>
+        {" "}
+        <ProfitLoss />
+      </PrivateRoute>
+    ),
   },
 
   {
     path: "/TotalLedger",
-    element: <TotalLedger />,
+    element: (
+      <PrivateRoute>
+        <TotalLedger />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/BetHistory",
-    element: <BetHistory />,
+    element: (
+      <PrivateRoute>
+        <BetHistory />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/LiveBetHistory",
-    element: <LiveBetHistory />,
+    element: (
+      <PrivateRoute>
+        <LiveBetHistory />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/addapagelive",
-    element: <AddPageLive />,
+    element: (
+      <PrivateRoute>
+        <AddPageLive />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/ViewMatch",
-    element: <ViewMatch />,
+    element: (
+      <PrivateRoute>
+        <ViewMatch />
+      </PrivateRoute>
+    ),
   },
 ]);
 
