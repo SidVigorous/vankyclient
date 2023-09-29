@@ -20,11 +20,16 @@ import LiveBetHistory from "./Pages/LiveBetHistory/LiveBetHistory";
 import AddPageLive from "./Pages/AddPageLive/AddPageLive";
 import ViewMatch from "./Pages/ViewMatch/ViewMatch";
 import PrivateRoute from "./utils/PrivateRoute";
+import PublicRoutes from "./utils/PublicRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <PrivateRoute>
+        <App />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/Allcasino",
